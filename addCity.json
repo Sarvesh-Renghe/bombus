@@ -1,0 +1,8 @@
+{
+    "url": "localhost:3060",
+    "data": {
+        "city": "Mumbai",
+        "user_id": "demo",
+        "password": "demo"
+    }
+}
