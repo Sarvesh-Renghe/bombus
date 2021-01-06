@@ -1,0 +1,17 @@
+{
+"startup": [
+],
+"main": [
+	{"action":"scriptLine","params":"$.priceData = {};"},
+	{"action":"section","params":["captureDetails","$.priceData"]}
+],
+"reset": [
+	{"action":"scriptLine","params":"console.log(JSON.stringify($));"}
+],
+"tearDown": [
+],
+"captureDetails": [
+	{"action":"extractValue","params":["cond={type:'span', id:'priceblock_ourprice'}","$.price"]},
+	{"action":"extractValue","params":["cond={type:'span', id:'productTitle' }","$.prodTitle"]}
+]
+}
