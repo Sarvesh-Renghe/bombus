@@ -2,16 +2,17 @@
 "startup": [
 ],
 "main": [
-	{"action":"scriptLine","params":"$.priceData = {};"},
-	{"action":"section","params":["captureDetails","$.priceData"]}
+	{"action":"scriptLine","params":"$.priceData = {};","scriptRowId":"row_18"},
+	{"action":"section","params":["captureDetails","$.priceData"],"scriptRowId":"row_19"}
 ],
 "reset": [
-	{"action":"scriptLine","params":"console.log(JSON.stringify($));"}
+	{"action":"scriptLine","params":"console.log(JSON.stringify($));","scriptRowId":"row_20"}
 ],
 "tearDown": [
 ],
 "captureDetails": [
-	{"action":"extractValue","params":["cond={type:'span', id:'priceblock_ourprice'}","$.price"]},
-	{"action":"extractValue","params":["cond={type:'span', id:'productTitle' }","$.prodTitle"]}
+	{"action":"extractValue","params":["cond={type:'span', id:'priceblock_ourprice'}","$.price"],"scriptRowId":"row_21"},
+	{"action":"extractValue","params":["cond={type:'span', id:'productTitle' }","$.prodTitle"],"scriptRowId":"row_22"},
+	{"action":"extractValue","params":["cond={type:'span', class: 'a-icon-alt' }","$.ratingStars"],"scriptRowId":"row_23"}
 ]
 }
