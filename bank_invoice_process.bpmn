@@ -97,12 +97,6 @@
         "field": "received_date"
       },
       {
-        "field": "email_attachments"
-      },
-      {
-        "field": "attachment_path"
-      },
-      {
         "field": "need_review",
         "variable": true
       },
@@ -221,8 +215,7 @@
       {
         "field": "module_name"
       }
-    ],
-    "business_impact": "1"
+    ]
   },
   "start_event": {
     "buss_id_prefix": "INV",
@@ -251,13 +244,11 @@
         "field": "received_date",
         "name": "date",
         "required": true
-      },
-      {
-        "field": "email_attachments"
       }
     ],
     "sla": "01:00:00",
-    "start_form": true
+    "start_form": true,
+    "activity_type": 0
   },
   "dmn_review": {
     "activity_type": 2,
@@ -282,18 +273,7 @@
   "ocr_extract_data": {
     "activity_type": 4,
     "connector": 110,
-    "input": [
-      {
-        "field": "email_attachments",
-        "name": "files",
-        "required": true
-      },
-      {
-        "field": "attachment_path",
-        "name": "file_path",
-        "required": true
-      }
-    ],
+    "input": [],
     "output": [
       {
         "field": "sgst_amount"
@@ -415,12 +395,6 @@
     "assignee": 54,
     "assignment_strategy": "WG",
     "input": [
-      {
-        "field": "email_attachments"
-      },
-      {
-        "field": "attachment_path"
-      },
       {
         "field": "sgst_amount"
       },
@@ -776,12 +750,6 @@
     "activity_type": 3,
     "input": [
       {
-        "field": "email_attachments"
-      },
-      {
-        "field": "attachment_path"
-      },
-      {
         "field": "sgst_amount"
       },
       {
@@ -1003,12 +971,6 @@
     "assignee": 53,
     "assignment_strategy": "WG",
     "input": [
-      {
-        "field": "email_attachments"
-      },
-      {
-        "field": "attachment_path"
-      },
       {
         "field": "sgst_amount"
       },
@@ -1257,8 +1219,7 @@
         "field": "buss_id",
         "required": true
       }
-    ],
-    "cycle_time": "5"
+    ]
   },
   "util_send_rejection": {
     "activity_type": 8,
